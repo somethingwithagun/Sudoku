@@ -1,0 +1,51 @@
+
+.board {
+  width: 372px;
+  height: 372px;
+  display: flex;
+  flex-direction: column;
+}
+
+.board .board-row {
+  display:flex;
+  flex: 1;
+}
+
+.board .board-row:first-child {
+ border-top: 0;
+}
+
+.board-row .square {
+  width: 41.34px;
+  height: 41.34px;
+  color:#141414;
+}
+
+.square.even {
+  background-color: #D9D9D9;
+}
+.square.odd {
+  background-color: #C9C9C9;
+}
+.square:hover {
+  background-color: #C1C1C1;
+}
+.square.active{
+  background-color: #f7b1b1;
+}
+
+.square.border-right {
+  border-right: 1px solid #141414;
+}
+.square.border-bottom {
+  border-bottom: 1px solid #141414;
+}
+
+
+.square.marked {
+  color: red;
+}
+
+.middle-square-row .clicked {
+    background-color: rgb(208, 183, 183) !important;
+}
